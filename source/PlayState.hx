@@ -316,13 +316,13 @@ class PlayState extends MusicBeatState
 			}
 			case 'song1' | 'atrocity':
 			  {
-			    defaultCamZoom = 0.6;
+			    defaultCamZoom = 0.8;
           curStage = 'poyocity';
           var bg:FlxSprite = new FlxSprite(-700, -345).loadGraphic(Paths.image('bg', 'week7'));
           bg.antialiasing = true;
           bg.scrollFactor.set(0.9, 0.9);
           bg.active = false;
-          add(bg)
+          add(bg);
 			  }
 			case 'pico' | 'blammed' | 'philly': 
 					{
