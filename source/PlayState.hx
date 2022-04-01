@@ -294,7 +294,7 @@ class PlayState extends MusicBeatState
 			case 'thorns':
 				dialogue = CoolUtil.coolTextFile(Paths.txt('thorns/thornsDialogue'));
 		}
-
+    
 		switch(SONG.song.toLowerCase())
 		{
 			case 'spookeez' | 'monster' | 'south': 
@@ -314,6 +314,16 @@ class PlayState extends MusicBeatState
 
 				isHalloween = true;
 			}
+			case 'song1' | 'atrocity':
+			  {
+			    defaultCamZoom = 0.6;
+          curStage = 'poyocity';
+          var bg:FlxSprite = new FlxSprite(-700, -345).loadGraphic(Paths.image('bg', 'week7'));
+          bg.antialiasing = true;
+          bg.scrollFactor.set(0.9, 0.9);
+          bg.active = false;
+          add(bg)
+			  }
 			case 'pico' | 'blammed' | 'philly': 
 					{
 					curStage = 'philly';

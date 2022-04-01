@@ -123,7 +123,7 @@ class Character extends FlxSprite
 				antialiasing = false;
 				
 			case 'poyo':
-				var tex = Paths.getSparrowAtlas('characters/shitbox/poyolmao','shared');
+				var tex = Paths.getSparrowAtlas('poyolmao','week7');
 				frames = tex;
 				animation.addByPrefix('idle', 'Idle', 16, false);
 				animation.addByPrefix('singUP', 'Up', 8, false);
