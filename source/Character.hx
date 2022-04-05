@@ -142,7 +142,7 @@ class Character extends FlxSprite
 
 				flipX = true;
 				
-				setGraphicSize(Std.int(width * 1.1));
+				setGraphicSize(Std.int(width * 1.3));
 
 			case 'dad':
 				// DAD ANIMATION LOADING CODE
